@@ -1,0 +1,98 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#EEF1FF',
+          100: '#DCE3FF',
+          200: '#B9C7FF',
+          300: '#96ABFF',
+          400: '#738FFF',
+          500: '#5073FF',
+          600: '#4169E1', // Royal Blue
+          700: '#3454B4',
+          800: '#273F87',
+          900: '#1A2A5A',
+        },
+        secondary: {
+          50: '#F8F9FA',
+          100: '#E9ECEF',
+          200: '#DEE2E6',
+          300: '#CED4DA',
+          400: '#ADB5BD',
+          500: '#6C757D',
+          600: '#495057',
+          700: '#343A40',
+          800: '#212529',
+          900: '#121416',
+        },
+        accent: {
+          50: '#FFEEEC',
+          100: '#FFDDD9',
+          200: '#FFBBB3',
+          300: '#FF998D',
+          400: '#FF7768',
+          500: '#FF5542',
+          600: '#FF7262',
+          700: '#CC5B4E',
+          800: '#99443A',
+          900: '#662E27',
+        },
+      },
+      fontFamily: {
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'sans-serif',
+        ],
+      },
+      spacing: {
+        '8': '8px',
+        '16': '16px',
+        '24': '24px',
+        '32': '32px',
+        '40': '40px',
+        '48': '48px',
+        '56': '56px',
+        '64': '64px',
+        '72': '72px',
+        '80': '80px',
+        '88': '88px',
+        '96': '96px',
+        '160': '160px',
+        '200': '200px',
+        '240': '240px',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.5s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
